@@ -3,7 +3,7 @@
 
 Solucion
 
-
+```Java
 package appservicioaguauts;
 
 import java.util.Scanner;
@@ -44,3 +44,4 @@ public class AppServicioAguaUTS {
     }
     
 }
+```
