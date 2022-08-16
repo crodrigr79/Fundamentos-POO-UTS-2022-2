@@ -1,5 +1,9 @@
 # Ejercicios realizados en clase
 
+## 1. Ejercicio de servicio de agua (Condicionales). 
+
+![image](https://user-images.githubusercontent.com/31961588/184923865-82dbd8ad-0c40-43cc-a0f8-4a249ef7bfc1.png)
+
 
 Solucion
 
