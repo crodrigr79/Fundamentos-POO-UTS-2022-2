@@ -99,7 +99,32 @@ public class AppCirculo {
 ## 6. Número invertido
 ![image](https://user-images.githubusercontent.com/31961588/163828564-7e54ea4c-73a9-4ef7-aca9-21f1dd124d93.png)
 
-**Solución 5**
+**Solución**
+
+```Java
+package appcirculo;
+
+import java.util.Scanner;
+
+public class Invertido {
+    public static void main(String[] args) {
+        Scanner leer=new Scanner(System.in);
+        System.out.println("Programa número invertido");
+        int numero,invertido;
+        System.out.println("Ingrese número: ");
+        numero=leer.nextInt();
+        
+        invertido=(numero%10)*100; //Centenas
+        numero=numero/10;
+        invertido=invertido+((numero%10)*10); //Decenas
+        numero=numero/10;
+        invertido=invertido+numero; //Unidades
+        
+        System.out.println("Invertido es: "+invertido);  
+    }
+}
+
+```
 
 ## 7. Pitágoras
 
