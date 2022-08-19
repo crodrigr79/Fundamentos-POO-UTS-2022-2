@@ -56,6 +56,29 @@ public class AppServicioAguaUTS {
 
 **Solución 1**
 
+```Java
+
+package appcirculo;
+
+import java.util.Scanner;
+
+public class AppCirculo {
+   
+    public static void main(String[] args) {
+        
+        Scanner leer=new Scanner(System.in);
+        double radio,perimetro,area;
+        System.out.println("Ingrese el radio: ");
+        radio=leer.nextDouble();
+        area=Math.PI*Math.pow(radio,2);
+        perimetro=2*Math.PI*radio;        
+        System.out.println("El perimetro es: "+perimetro+" "+"el area es: "+area);
+        
+    }
+    
+}
+```
+
 ## 3. Circulo
 
 ![image](https://user-images.githubusercontent.com/31961588/163828347-f0f3f021-0456-43f8-b481-1d818a87be08.png)
