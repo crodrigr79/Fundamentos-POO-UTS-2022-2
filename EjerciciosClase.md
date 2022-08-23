@@ -208,3 +208,47 @@ public class HoraFutura {
 
 ![image](https://user-images.githubusercontent.com/31961588/171307000-a088f237-f470-4fd5-adb6-d077a17695c5.png)
 
+
+## 12. Vendedores usando for
+
+![image](https://user-images.githubusercontent.com/31961588/186056512-c237f637-df8d-4437-9e3e-ce9b7ffafef6.png)
+
+```Java
+
+package appcirculo;
+
+import java.util.Scanner;
+
+
+public class VendedoresComision {
+    public static void main(String arg[]){
+      Scanner leer=new Scanner(System.in);
+      //Variables
+      int numeroVendedores;
+      String cedula;
+      int tipoVendedor;
+      double valorVentasMes,comisiones;
+      
+      System.out.println("Ingrese el número de vendedores: ");
+      numeroVendedores=leer.nextInt();
+      
+      for(int i=0;i<numeroVendedores;i++){
+          System.out.println("Ingrese cedula: ");
+          cedula=leer.next();
+          System.out.println("Ingrese el tipo vendedor 1:pueta y 2:ejecutivo");
+          tipoVendedor=leer.nextInt();
+          System.out.println("Ingrese las ventas del mes: ");
+          valorVentasMes=leer.nextDouble();
+          if(tipoVendedor==1){
+           comisiones=valorVentasMes*0.20;
+          }else{
+           comisiones=valorVentasMes*0.30; 
+          }
+          System.out.println("El valor de la comisión es: "+comisiones);    
+      
+      }
+                
+    }
+}
+
+```
