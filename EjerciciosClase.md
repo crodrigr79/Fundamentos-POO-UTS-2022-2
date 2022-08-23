@@ -131,6 +131,30 @@ public class Invertido {
 ![image](https://user-images.githubusercontent.com/31961588/163829448-e7ae3e2f-cf13-4058-88b8-6cdedbe19911.png)
 
 
+```Java
+package appcirculo;
+
+import java.util.Scanner;
+
+public class Pitagoras {
+
+    public static void main(String arg[]) {
+        Scanner leer = new Scanner(System.in);
+        double c, a, b;
+        System.out.println("Ingrese el cateto a: ");
+        a = leer.nextDouble();
+        System.out.println("Ingrese el cateto b: ");
+        b = leer.nextDouble();
+        c=Math.pow(a,2)+Math.pow(b,2);
+        c=Math.sqrt(c);
+        System.out.println("Hipotenusa: "+c);
+    }
+
+}
+
+```
+
+
 **Solución 6**
 
 
