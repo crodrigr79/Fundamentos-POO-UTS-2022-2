@@ -141,6 +141,31 @@ public class Invertido {
 
 **Solución 7**
 
+```Java
+package appcirculo;
+
+import java.util.Scanner;
+
+
+public class HoraFutura {
+    
+    public static void main(String args[]){
+      Scanner leer=new Scanner(System.in);
+      int hActual,numHoras,totalHoras;
+      System.out.println("Ingrese la hora actual: ");
+      hActual=leer.nextInt();
+      System.out.println("Ingrese el número de horas: ");
+      numHoras=leer.nextInt();
+      totalHoras=hActual+numHoras;
+      if(totalHoras<=24){
+        System.out.println("Hora futuro es: "+totalHoras);
+      }else{
+        System.out.println("Hora futuro es: "+totalHoras%24); 
+      }  
+    }    
+}
+```
+
 ## 9. Parte decimal
 
 ![image](https://user-images.githubusercontent.com/31961588/163829563-509bc535-d528-47c7-a804-8725acb7a995.png)
