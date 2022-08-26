@@ -252,3 +252,49 @@ public class VendedoresComision {
 }
 
 ```
+
+## 13. Vendedores por comisión con while
+
+
+![image](https://user-images.githubusercontent.com/31961588/186896326-71be6c72-4040-4f45-a54d-e7a6a30b74af.png)
+
+**Solucion**
+
+```Java
+
+import java.util.Scanner;
+
+public class VendedoresWhile {
+    
+    public static void main(String arg[]){
+      Scanner leer=new Scanner(System.in);
+      String cedula,nombre;
+      int tipoVendedor;
+      double ventas,comision;
+      
+      System.out.println("Ingrese la cedula: ");
+      cedula=leer.next();
+      while(!cedula.equals("999")){
+         System.out.println("Ingrese el nombre: ");
+         nombre=leer.next();
+         System.out.println("Tipo de vendedor 1: puerta y 2: ejecutivo: ");
+         tipoVendedor=leer.nextInt();
+         System.out.println("Ingrese las ventas del mes: ");
+         ventas=leer.nextDouble();         
+         if(tipoVendedor==1){
+           comision=ventas*0.20;
+         }else{
+           comision=ventas*0.30;
+         }         
+         System.out.println("La comsión es: "+comision);
+         System.out.println("Siguiente empleado....");
+         System.out.println("Ingrese la cedula");
+         cedula=leer.next();         
+      }      
+      System.out.println("Fin de progrma...");    
+    }
+    
+}
+
+```
+
