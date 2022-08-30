@@ -298,3 +298,44 @@ public class VendedoresWhile {
 
 ```
 
+#  14. Suma de pares e impares con arreglos de una dimensión
+
+![image](https://user-images.githubusercontent.com/31961588/187333785-e66e5a7a-2933-40d3-8a21-5de7977abace.png)
+
+```Java
+
+package appcirculo;
+
+import java.util.Scanner;
+
+public class SumaPares {
+    
+    public static void main(String arg[]){
+       Scanner leer=new Scanner(System.in);
+       int[] numero=new int[6];
+       int numPares=0,numImpares=0,sumPares=0,sumImpares=0;
+       //llennar arreglo
+       for(int i=0;i<numero.length;i++){
+           System.out.println("Ingrese el número: ");
+           numero[i] =leer.nextInt();       
+       }
+       //Resolver el problema
+       for(int i=0;i<numero.length;i++){
+              if(numero[i]%2==0){
+                numPares++;
+                sumPares+=numero[i];
+              }else{
+                numImpares++;
+                sumImpares+=numero[i];                
+              }        
+       }       
+       System.out.println("Numero de pares: "+numPares);
+       System.out.println("Numero de impares: "+numImpares);
+       System.out.println("Suma de pares: "+sumPares);
+       System.out.println("Suma de impares: "+sumImpares);
+    }      
+}
+
+```
+
+
