@@ -378,4 +378,60 @@ public class Ordenamiento {
 
 ```
 
+# 16. Servicio de teléfono
 
+![image](https://user-images.githubusercontent.com/31961588/188146920-fc371151-7dca-49c4-9326-d131b63cd371.png)
+
+```java
+package appcirculo;
+
+import java.util.Scanner;
+
+public class ServicioTelefono {
+
+    public static void main(String arg[]) {
+        Scanner leer = new Scanner(System.in);
+        int abonados;
+        int codigo;
+        int estrato;
+        int impulsos;
+        int totalPagar;
+        int totaPagarAbonados=0;
+        final int VALOR_IMPULSO=100;
+        System.out.println("Ingrese el número de abonados: ");
+        abonados = leer.nextInt();
+
+        for (int i = 0; i < abonados; i++) {
+             System.out.println("Información del abonado: "+i);
+             System.out.println("Ingrese codigo: ");
+             codigo=leer.nextInt();
+             System.out.println("Ingrese estrato: ");
+             estrato=leer.nextInt();
+             System.out.println("Ingrese impulsos ");
+             impulsos=leer.nextInt();
+             totalPagar=getTarifaBasica(estrato)+(impulsos*VALOR_IMPULSO);
+             totaPagarAbonados+=totalPagar;
+             System.out.println("Valor a pagar: "+totalPagar);            
+        }
+        System.out.println("Total a pagar de los abonados: "+totaPagarAbonados);
+    }
+    
+    public static int getTarifaBasica(int estrato){
+        switch (estrato) {
+            case 1:
+                return 10000;
+            case 2:
+                return 15000;
+            case 3:
+                return 20000;
+            case 4:
+                return 25000;
+            default:
+                return 30000;
+        }
+      
+    }
+
+}
+
+```
