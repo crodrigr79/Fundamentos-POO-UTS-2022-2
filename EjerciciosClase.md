@@ -338,4 +338,44 @@ public class SumaPares {
 
 ```
 
+# 15 Ordenamiento método burbuja y uso de métodos
+
+
+```Java
+
+package appcirculo;
+
+import java.util.Scanner;
+
+public class Ordenamiento {
+    
+    public static void main(String arg[]){
+            
+        int[] numeros={4,5,6,1,9,10,7,8};
+        int temp=0;
+        System.out.println("Arreglo original");
+        imprimir(numeros);        
+        for(int i=0;i<numeros.length;i++){
+             for(int j=i+1;j<numeros.length;j++){
+                   if(numeros[i]<numeros[j]){
+                       temp=numeros[i];
+                       numeros[i]=numeros[j];
+                       numeros[j]=temp;
+                   }
+             }
+        }
+          System.out.println("Arreglo ordenado");      
+        imprimir(numeros); 
+    }
+    
+    public static void imprimir(int[] num){        
+        for(int i=0;i<num.length;i++){
+          System.out.println(num[i]);
+        }    
+    }
+    
+}
+
+```
+
 
