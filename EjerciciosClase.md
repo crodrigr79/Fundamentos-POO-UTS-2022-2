@@ -435,3 +435,69 @@ public class ServicioTelefono {
 }
 
 ```
+#### Version con arreglo de dos dimesiones.
+
+
+```Java
+
+package appcirculo;
+
+import java.util.Scanner;
+
+public class ArrglosDosDimesiones {
+    
+    public static void main(String arg[]){
+        Scanner leer=new Scanner(System.in);
+        int numeroAbonados=0;
+        final int VALOR_IMPULSOS=100;
+        System.out.println("Ingrese el numero de abonandos: ");
+        numeroAbonados=leer.nextInt();       
+        int[][] datos=new int[numeroAbonados][4];
+        int sumaTotal=0;
+        
+        //Llenado los datos con la info de los abonados
+        for(int i=0;i<datos.length;i++){            
+                 System.out.println("Ingrese el código: ");
+                 datos[i][0]=leer.nextInt();
+                 System.out.println("Ingrese el estrato: ");
+                 datos[i][1]=leer.nextInt();
+                 System.out.println("Ingrese los impulsos");
+                 datos[i][2]=leer.nextInt(); 
+                 datos[i][3]=(VALOR_IMPULSOS*datos[i][2])+obtenerTarifaBasica(datos[i][1]);
+                 sumaTotal=sumaTotal+datos[i][3];
+            System.out.print("\n");
+        }      
+     
+        imprimir(datos);
+        System.out.println("Total a pagar por abonados: "+sumaTotal);
+              
+        
+    }   
+    public static void imprimir(int[][] a){
+           for(int i=0;i<a.length;i++){
+            for(int j=0;j<a[i].length;j++){
+                 System.out.print(a[i][j]+"  ");                 
+            }
+            System.out.print("\n");
+            }       
+   }
+    
+    public static int obtenerTarifaBasica(int es){
+        switch (es) {
+            case 1:
+                return 10000;
+            case 2:
+                return 15000;
+            case 3:
+                return 20000;
+            case 4:
+                return 25000;
+            default:
+                return 30000;
+        }
+    
+    }
+    
+}
+
+```
