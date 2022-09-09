@@ -501,3 +501,20 @@ public class ArrglosDosDimesiones {
 }
 
 ```
+
+## Notas de estudiantes de un curso. Calcular nota final y estadisticas. 
+
+La siguiente matriz representa las notas de los estudiantes del curso de programación. La columa 0, 1, 2 son notas de quices y talleres, la cuales tiene un valor del 40% y la columan 3 es la nota del parcial que vale un 60% para calcular la nota final que debe ir en la columna 4.  El programa debe resolver: 
+
+1. Calcular y guardar la nota final de cada estudiante. La nota final debe ir en la columna 4. 
+2. Cuantos estudiantes aprobaron el curso. 
+3. Cuantos estudiantees reaprobaron el curso.
+4. Cuanto es el promedio de la notas del curso. 
+5. Cual fue el estudiante con mayor nota final. El estudiante, es decir, el estudiante de la fila: 0,1,2.....
+6. Cual fue el estudiante con menor nota final.
+
+
+Nota: el curso se aprueba con la nota final igual o mayor a 3.0.
+
+![image](https://user-images.githubusercontent.com/31961588/189343291-82183144-b84b-4cca-bfc0-d6659c41dd52.png)
+
