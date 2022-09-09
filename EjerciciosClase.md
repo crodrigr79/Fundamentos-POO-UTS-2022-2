@@ -502,7 +502,7 @@ public class ArrglosDosDimesiones {
 
 ```
 
-## 17. Notas de estudiantes de un curso. Calcular nota final y estadisticas. 
+# 17. Notas de estudiantes de un curso. Calcular nota final y estadisticas. 
 
 La siguiente matriz representa las notas de los estudiantes del curso de programación. La columa 0, 1, 2 son notas de quices y talleres, la cuales tiene un valor del 40% y la columan 3 es la nota del parcial que vale un 60% para calcular la nota final que debe ir en la columna 4.  El programa debe resolver: 
 
